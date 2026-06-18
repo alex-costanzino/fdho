@@ -1,0 +1,250 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta name="description"
+        content="Spectral Gating via Damped Oscillations for Adaptive Implicit Neural Representations.">
+  <meta name="keywords" content="implicit neural representations, spectral gating, damped oscillations, adaptive representations, computer vision">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Spectral Gating via Damped Oscillations for Adaptive Implicit Neural Representations</title>
+
+  <!-- Global site tag (gtag.js) - Google Analytics -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-PYVRSFMDRL"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+
+    function gtag() {
+      dataLayer.push(arguments);
+    }
+
+    gtag('js', new Date());
+
+    gtag('config', 'G-PYVRSFMDRL');
+  </script>
+
+  <link href="https://fonts.googleapis.com/css?family=Google+Sans|Noto+Sans|Castoro"
+        rel="stylesheet">
+
+  <link rel="stylesheet" href="./static/css/bulma.min.css">
+  <link rel="stylesheet" href="./static/css/bulma-carousel.min.css">
+  <link rel="stylesheet" href="./static/css/bulma-slider.min.css">
+  <link rel="stylesheet" href="./static/css/fontawesome.all.min.css">
+  <link rel="stylesheet"
+        href="https://cdn.jsdelivr.net/gh/jpswalsh/academicons@1/css/academicons.min.css">
+  <link rel="stylesheet" href="./static/css/index.css">
+  <link rel="icon" href="./static/images/oscillator.svg">
+
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script defer src="./static/js/fontawesome.all.min.js"></script>
+  <script src="./static/js/bulma-carousel.min.js"></script>
+  <script src="./static/js/bulma-slider.min.js"></script>
+  <script src="./static/js/index.js"></script>
+</head>
+<body>
+
+<nav class="navbar" role="navigation" aria-label="main navigation">
+  <div class="navbar-brand">
+    <a role="button" class="navbar-burger" aria-label="menu" aria-expanded="false">
+      <span aria-hidden="true"></span>
+      <span aria-hidden="true"></span>
+      <span aria-hidden="true"></span>
+    </a>
+  </div>
+  <div class="navbar-menu">
+    <div class="navbar-start" style="flex-grow: 1; justify-content: center;">
+      <a class="navbar-item" href="https://alex-costanzino.github.io/">
+      <span class="icon">
+          <i class="fas fa-home"></i>
+      </span>
+      </a>
+
+      <div class="navbar-item has-dropdown is-hoverable">
+        <a class="navbar-link">
+          More Research
+        </a>
+        <div class="navbar-dropdown">
+          <a class="navbar-item" href="https://cvlab-unibo.github.io/Depth4ToM/">
+            Depth4ToM
+          </a>
+          <a class="navbar-item" href="https://cvlab-unibo.github.io/CrossmodalFeatureMapping/">
+            Crossmodal Feature Mappings
+          </a>
+          <a class="navbar-item" href="https://alex-costanzino.github.io/learning_to_be_a_transformer/">
+            Learning to Be a Transformer
+          </a>
+          <a class="navbar-item" href="https://alex-costanzino.github.io/SiM3D/">
+            SiM3D
+          </a>
+          <a class="navbar-item" href="https://alex-costanzino.github.io/radar/">
+            RADAR
+          </a>
+          <a class="navbar-item" href="https://alex-costanzino.github.io/modmap/">
+            ModMap
+          </a>
+        </div>
+      </div>
+    </div>
+
+  </div>
+</nav>
+
+
+<section class="hero">
+  <div class="hero-body">
+    <div class="container is-max-desktop">
+      <div class="columns is-centered">
+        <div class="column has-text-centered">
+          <h1 class="title is-1 publication-title">Spectral Gating via Damped Oscillations for Adaptive Implicit Neural Representations</h1>
+          <div class="is-size-5 publication-authors">
+            
+            <span class="author-block">
+              <a href="https://alex-costanzino.github.io/">Alex Costanzino</a><sup>1</sup>,
+            </span>
+
+            <span class="author-block">
+              <a href="https://pierlui92.github.io/">Pierluigi Zama Ramirez</a><sup>2</sup>,
+            </span>
+
+            <span class="author-block">
+              <a href="https://www.unibo.it/sitoweb/giuseppe.lisanti">Giuseppe Lisanti</a><sup>1</sup>,
+            </span>
+
+            <span class="author-block">
+              <a href="https://www.unibo.it/sitoweb/luigi.distefano">Luigi Di Stefano</a><sup>1</sup>,
+            </span>
+
+          </div>
+
+          <div class="is-size-5 publication-authors">
+            <span class="author-block"><sup>1</sup>CVLab, University of Bologna,</span>
+            <span class="author-block"><sup>2</sup>Ca' Foscari University of Venice</span>
+          </div>
+
+          <div class="has-text-centered" style="margin: 0.75rem 0;">
+            <span class="is-size-5 has-text-weight-bold" style="font-style: italic;">
+              Accepted at ECCV 2026
+            </span>
+          </div>
+
+          <div class="column has-text-centered">
+            <div class="publication-links">
+              <!-- PDF Link. -->
+              <span class="link-block">
+                <a href=""
+                   class="external-link button is-normal is-rounded is-dark">
+                  <span class="icon">
+                      <i class="fas fa-file-pdf"></i>
+                  </span>
+                  <span>Paper [TBA]</span>
+                </a>
+              </span>
+              <span class="link-block">
+                <a href=""
+                   class="external-link button is-normal is-rounded is-dark">
+                  <span class="icon">
+                      <i class="ai ai-arxiv"></i>
+                  </span>
+                  <span>arXiv [TBA]</span>
+                </a>
+              </span>
+              <!-- Code Link. -->
+              <span class="link-block">
+                <a href=""
+                   class="external-link button is-normal is-rounded is-dark">
+                  <span class="icon">
+                      <i class="fab fa-github"></i>
+                  </span>
+                  <span>Code [TBA]</span>
+                  </a>
+              </span>
+              <!-- Dataset Link. -->
+              <span class="link-block">
+                <a href=""
+                   class="external-link button is-normal is-rounded is-dark">
+                  <span class="icon">
+                    <img src="https://huggingface.co/front/assets/huggingface_logo-noborder.svg"
+                        alt="Hugging Face" style="height:1em;">
+                  </span>
+                  <span>Data [TBA]</span>
+                  </a>
+            </div>
+
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- <section class="hero teaser">
+  <div class="container is-max-desktop">
+    <div class="hero-body">
+      <img src="./static/images/pipeline.png" alt="Teaser image" height="100%" />
+      <h2 class="subtitle has-text-centered">
+        We extend Crossmodal Feature Mapping with Feature-wise Linear Modulations to enable cross-view training.
+      </h2>
+    </div>
+  </div>
+</section> -->
+
+
+<section class="section">
+  <div class="container is-max-desktop">
+    <!-- Abstract. -->
+    <div class="columns is-centered has-text-centered">
+      <div class="column is-four-fifths">
+        <h2 class="title is-3">Abstract</h2>
+        <div class="content has-text-justified">
+          <p>
+            Implicit Neural Representations (INRs) have been proven successful in encoding continuous signals through coordinate-based networks, yet facing a spectral dilemma: periodic activations capture fine details but act as all-pass filters that memorise noise, while spatially compact activations regularise effectively but suffer from low-frequency bias.
+            Existing attempts to resolve this trade-off introduce computational overhead or tuning frailty.
+          </p>
+          <p>
+            We propose to model each neuron's activation as the steady-state response of a sinusoidally-forced damped harmonic oscillator, whose amplitude naturally governs the network's spectral selectivity during training.
+            By jointly optimising the oscillator parameters alongside the network weights, our method adapts to the target signal's spectral content without explicit regularisation. 
+            Initialised in the stopband, the network exhibits a coarse-to-fine learning curriculum that progressively expands its spectral gate, capturing low-frequency structures first and high-frequency details only when justified by the reconstruction objective.
+          </p>
+          <p>
+            Comprehensive experiments show that our approach consistently achieves state-of-the-art or competitive results against established INRs, while requiring no task-specific tuning of any hyperparameters.
+          </p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+<section class="section" id="BibTeX">
+  <div class="container is-max-desktop content">
+    <h2 class="title">BibTeX</h2>
+    <pre><code>@article{costanzino2026fdho,
+  author    = {Costanzino, Alex and Zama Ramirez, Pierluigi and Lisanti, Giuseppe and Di Stefano, Luigi},
+  title     = {Spectral Gating via Damped Oscillations for Adaptive Implicit Neural Representations},
+  journal   = {The European Conference on Computer Vision},
+  year      = {2026},
+}
+</code></pre>
+  </div>
+</section>
+
+
+<footer class="footer">
+  <div class="container">
+    <div class="columns is-centered">
+      <div class="column is-8">
+        <div class="content">
+          <strong>Acknowledgments</strong><br><br>
+
+          <p>
+            [*] Code: This website is based on the Nerfies template, code developed for a research collaboration between researchers at Google Research and University of Washington (the Nerfies project). 
+            The <a href="https://github.com/nerfies/nerfies.github.io">Nerfies</a> code is licensed under a Creative Commons Attribution-ShareAlike 4.0 International License.
+          </p>
+        </div>
+      </div>
+    </div>
+  </div>
+</footer>
+
+
+</body>
+</html>
